@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  overflow: hidden; /* Prevent scrollbars */
+  background-color: #000; /* Set background color for a cleaner look */
+}
+
+/* Optional: Style the container element (adjust as needed) */
+#model-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
