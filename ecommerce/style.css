@@ -2,12 +2,15 @@
     --main-white: #fff;
     --semi-white: #F5F7F8;
     --span: #f00e0e;
+    --main-black: #000;
+    --button-color: #F4CE14;
+    --button-color-hover: #917900;
 }
 
 * {
     padding: 0%;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
 }
 
@@ -19,10 +22,11 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .grid-container-1 {
-    background-image: url(images/image\ 3.jpg);
+    background-image: url(images/image\ 1.jpg);
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -32,7 +36,7 @@
 }
 
 .grid-container-1 h2 {
-    color: var(--main-white);
+    color: var(--main-black);
     padding-top: 2rem;
     line-height: 50px;
     font-size: 40px;
@@ -46,5 +50,72 @@ span {
 
 .spans {
     font-weight: 500;
-    color: var(--main-white);
+    color: var(--main-black);
+}
+
+.grid-container-1 h4 {
+    color: var(--main-black);
+    padding-top: 3rem;
+    font-weight: 600;
+}
+
+.grid-container-1 p {
+    font-weight: 300;
+}
+
+.grid-container-1 button {
+    background: var(--button-color);
+    padding: 10px 20px;
+    margin-top: 3rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.grid-container-1 button:hover {
+    color: var(--button-color-hover);
+    transition: .5s;
+}
+
+.grid-inner-1 {
+    background-color: var(--semi-white);
+    /* background-image: url(images/image\ 2.jpg); */
+    background-color: #F5F7F8;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.grid-inner-1 h3 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.grid-inner-1 p {
+    padding-top: 1rem;
+}
+
+.spanded {
+    color: var(--main-black);
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.grid-inner-1 button {
+    background: var(--button-color);
+    padding: 10px;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 1s;
 }
