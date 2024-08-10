@@ -119,3 +119,60 @@ span {
     cursor: pointer;
     transition: 1s;
 }
+
+.grid-inner-1 button:hover {
+    color: var(--button-color-hover);
+    transition: .5s;
+}
+
+.grid-inner-2 {
+    margin-top: 20px;
+    /* background-color: var(--semi-white); */
+    background-image: url(images/image\ 3.jpg);
+    background-color: #F5F7F8;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.grid-inner-2 h3 {
+    color: var(--main-white);
+    font-weight: 300;
+}
+
+.grid-inner-2 h2 {
+    color: var(--main-white);
+    font-weight: 600;
+}
+
+.grid-inner-2 p {
+    color: var(--semi-white);
+    padding-top: 2rem;
+    font-size: 19px;
+}
+
+.span {
+    color: var(--semi-white);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.grid-inner-2 button {
+    background: var(--button-color);
+    padding: 10px;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.grid-inner-2 button:hover {
+    color: var(--button-color-hover);
+    transition: .5s;
+}
