@@ -78,10 +78,6 @@ const Home = () => {
     <div class="flex-img-box">
         <img src={Mobile} alt=""/>
     </div>
-
-    <div class="flex-img-box">
-        {/* <img src="../assets/images/flex 6.jpg" alt=""> */}
-    </div>
     
    </div>
 
