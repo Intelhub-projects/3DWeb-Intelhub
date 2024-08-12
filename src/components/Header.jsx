@@ -64,8 +64,8 @@ const Header = () => {
 
       <div className="bg-black text-white ">
         <Container className="d-flex justify-content-between align-items-center">
-          <div className="bg-warning py-2 px-2 ">
-            <RiMenu2Fill /><span className="mx-2 ">All Catigories</span>
+          <div className="bg-warning py-2 px-2 text-black ">
+            <RiMenu2Fill /><span className="">All Catigories</span>
           </div>
           <div className="d-flex justify-content-between d-none d-md-flex">
             <div className="mx-3">Home</div>
