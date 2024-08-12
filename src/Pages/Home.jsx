@@ -1,9 +1,12 @@
 import React from "react";
+// import { Game, Laptop,Drone, Acc, Mobile } from "../assets/images";
+import { Acc, Laptop, Game, drone, Mobile } from "../assets/images";
 
 const Home = () => {
   return (
+    <>
     <section class="grid-body container p-1">
-      <div class="grid-container d-block d-md-flex">
+      <div class="grid-container">
         <div class="grid-container-1 ">
           <h2>
             AUDIO <br />
@@ -20,7 +23,7 @@ const Home = () => {
           <button type="submit">View All</button>
         </div>
 
-        <div class="grid-container-2 d-flex d-md-block">
+        <div class="grid-container-2 ">
           <div class="grid-inner-1">
             <h3>New Age Electric</h3>
 
@@ -47,6 +50,45 @@ const Home = () => {
         </div>
       </div>
     </section>
+
+    <section class="flex container">
+
+   <div class="flex-container">
+
+    <div class="flex-img-box">
+        <h2>super deals</h2>
+    </div>
+
+    <div class="flex-img-box">
+        <img src={Game} alt="" />
+    </div>
+
+    <div class="flex-img-box">
+        <img src={Laptop} alt=""/>
+    </div>
+
+    <div class="flex-img-box">
+        <img src={drone} alt=""/>
+    </div>
+
+    <div class="flex-img-box">
+        <img src={Acc} alt="" />
+    </div>
+
+    <div class="flex-img-box">
+        <img src={Mobile} alt=""/>
+    </div>
+
+    <div class="flex-img-box">
+        {/* <img src="../assets/images/flex 6.jpg" alt=""> */}
+    </div>
+    
+   </div>
+
+   </section>
+
+
+    </>
   );
 };
 

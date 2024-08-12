@@ -1,16 +1,18 @@
 :root {
   --main-white: #fff;
-  --semi-white: #F5F7F8;
+  --semi-white: #f5f7f8;
   --span: #f00e0e;
   --main-black: #000;
-  --button-color: #F4CE14;
+  --button-color: #f4ce14;
   --button-color-hover: #917900;
 }
 
-
-.catigories {
-  font-size: 8px;
-}
+/* * {
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+} */
 
 .grid-body {
   padding: 4rem;
@@ -23,7 +25,7 @@
 }
 
 .grid-container-1 {
-  background-image: url(./assets/images/image 1.jpg);
+  background-image: url(images/image\1jpg);
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -123,7 +125,7 @@ span {
 .grid-inner-2 {
   margin-top: 20px;
   /* background-color: var(--semi-white); */
-  background-image: url(./assets/images/image 3.jpg);
+  background-image: url(images/image\3jpg);
   background-color: #f5f7f8;
   width: 100%;
   background-position: center;
@@ -167,11 +169,145 @@ span {
   transition: 1s;
 }
 
-.grid-inner-2 button:hover, .nav-link:hover, .cag {
+.grid-inner-2 button:hover {
   color: var(--button-color-hover);
   transition: 0.5s;
 }
 
-.active{
-  color:  var(--button-color);
+@media screen and (max-width: 947px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .grid-body {
+    padding: 1rem;
+  }
+
+  .grid-container-1 {
+    background-image: url(images/image\1jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .grid-container-1 h2 {
+    color: var(--main-black);
+    padding-top: 2rem;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  span {
+    color: var(--span);
+  }
+
+  .spans {
+    font-weight: 400;
+    color: var(--main-black);
+  }
+
+  .grid-container-1 h4 {
+    color: var(--main-white);
+    padding-top: 1rem;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .grid-container-1 p {
+    font-weight: 300;
+    color: var(--main-white);
+    font-size: 20px;
+  }
+
+  .grid-container-1 button {
+    background: var(--button-color);
+    padding: 10px 20px;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .grid-container-1 button:hover {
+    color: var(--button-color-hover);
+    transition: 0.5s;
+  }
+}
+
+.flex {
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+}
+
+.flex-img-box {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+
+  background: var(--semi-white);
+}
+
+.flex-img-box img {
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  /* background: none; */
+}
+
+.flex-img-box h2 {
+  text-align: center;
+  padding: 30px;
+  color: var(--span);
+}
+
+@media screen and (max-width: 615px) {
+  .flex-img-box img {
+    width: 100%;
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  .flex-img-box {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--semi-white);
+  }
+
+  .flex-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* src\App.css */
+.grid-inner-2 button:hover,
+.nav-link:hover,
+.cag {
+  color: var(--button-color-hover);
+  transition: 0.5s;
+}
+
+.active {
+  color: var(--button-color);
 }
