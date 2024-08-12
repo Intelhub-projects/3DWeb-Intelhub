@@ -11,6 +11,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { LiaFlagUsaSolid } from "react-icons/lia";
 import { Container } from "react-bootstrap";
 import { RiMenu2Fill } from "react-icons/ri";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -22,7 +23,6 @@ const Header = () => {
               {" "}
               <FaPhoneAlt /> (+800) 123 456 7890
             </p>{" "}
-            
             <p className="mx-1 border-start px-1">
               {" "}
               <CiMail />
@@ -41,7 +41,10 @@ const Header = () => {
           </div>
         </div>
         <div className="d-flex justify-content-between align-items-center ">
-          <div className="fs-1"> <RiMenu2Fill className="d-md-none"/> Electro-mart</div>
+          <div className="fs-1">
+            {" "}
+            <RiMenu2Fill className="d-md-none" /> Electro-mart
+          </div>
           <div className="border rounded-pill d-none d-md-flex w-25 justify-content-between align-items-center">
             <div className="px-3">Search...</div>
             <div className="px-3 bg-warning border rounded-pill">
@@ -65,21 +68,37 @@ const Header = () => {
       <div className="bg-black text-white ">
         <Container className="d-flex justify-content-between align-items-center">
           <div className="bg-warning py-2 px-2 text-black ">
-            <RiMenu2Fill /><span className="">All Catigories</span>
+            <RiMenu2Fill />
+            <span className="cag">All Catigories</span>
           </div>
-          <div className="d-flex justify-content-between d-none d-md-flex">
-            <div className="mx-3">Home</div>
-            <div className="mx-3">Shop</div>
-            <div className="mx-3">Collection</div>
-            <div className="mx-3">Blog</div>
-            <div className="mx-3">Pages</div>
+          <div className="d-flex justify-content-between d-none d-md-flex text-white">
+            <NavLink to="/" activeClassName="active" className="nav-link mx-3">
+              Home
+            </NavLink>
+            <NavLink
+              to="/shop"
+              activeClassName="active" className="nav-link mx-3"
+            >
+              Shop
+            </NavLink>
+            <NavLink
+              to="/collection"
+              activeClassName="active" className="nav-link mx-3"
+            >
+              Collection
+            </NavLink>
+            <NavLink
+              to="/blog"
+              activeClassName="active" className="nav-link mx-3"
+            >
+              Blog
+            </NavLink>
           </div>
           <div>
             *Free Shipping On Orders <span className="text-danger">$500+</span>
           </div>
         </Container>
       </div>
-
     </div>
   );
 };
